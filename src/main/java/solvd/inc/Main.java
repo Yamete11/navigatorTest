@@ -19,5 +19,7 @@ public class Main {
         CityMap cityMap = new CityMap();
         cityMap.displayCities(cities);
 
+        System.out.println("Hello world");
+
     }
 }
