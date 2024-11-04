@@ -61,6 +61,7 @@ The main development branch is name `main`.
 
 > [!IMPORTANT]
 > We create a new branch following the rule:
+>
 > `prefix/<issue-number>-<issue-description>` e.g., `chore/1-docs-for-rules-of-collaboration`.
 
 #### How to Checkout Branch
@@ -74,7 +75,8 @@ The main development branch is name `main`.
 
 > [!TIP]
 > To maintain uniform naming for commits you can use the tool:
-> commitizen (https://commitizen-tools.github.io/commitizen/)
+>
+> **commitizen** (https://commitizen-tools.github.io/commitizen/)
 
 #### How to Commit Changes by Commitizen
 
@@ -103,6 +105,7 @@ The main development branch is name `main`.
 
 > [!IMPORTANT]
 > We create a new commit following the rule:
+>
 > `prefix(scope):<description>` e.g., `docs(README.md): rules of collaboration`.
 
 #### How Structure of Commit Looks Like
@@ -125,24 +128,24 @@ issue: #1
 
 > [!NOTE]
 > - Naming Conventions:
->  - **Pascal Case**: for classes => `UserRepository`
->  - **Pascal Case** + **Prefix I**: for interfaces => `IUserRepository`
->  - **Camel Case**: for variables and methods => `myVariable`, `myMethod`
->  - **Snake Case**: for database descriptions => `my_variable`
+>   - **Pascal Case**: for classes => `UserRepository`
+>   - **Pascal Case** + **Prefix I**: for interfaces => `IUserRepository`
+>   - **Camel Case**: for variables and methods => `myVariable`, `myMethod`
+>   - **Snake Case**: for database descriptions => `my_variable`
 
 > [!WARNING]
-> It is recommended that interface names differ from the names of the implementing classes only by the prefix I.
-> For example, if the implementing class is named UserRepository, the interface should be named IUserRepository.
+> It is recommended that **interface names** differ from the names of the implementing classes only by the **prefix _I_**.
+> For example, if the implementing class is named `UserRepository`, the interface should be named `IUserRepository`.
 
 > [!TIP]
 > - Principles of Clean Code:
->  - **Readability**: Code should be easy to read. 
->  - **Clarity**: Avoid ambiguous abbreviations and names.
->  - **Modularity**: Each module should be small and have a single responsibility.
->  - **Avoid Duplication**: DRY (Don't Repeat Yourself).
->  - **Don't Complicate**: KISS (Keep It Simple, Stupid).
->  - **Don't Generate Excess Code**: YAGNI (You Aren't Gonna Need It).
->  - **Comments**: Comment only when necessary, and when essential information cannot be conveyed through naming.
+>   - **Readability**: Code should be easy to read. 
+>   - **Clarity**: Avoid ambiguous abbreviations and names.
+>   - **Modularity**: Each module should be small and have a single responsibility.
+>   - **Avoid Duplication**: DRY (Don't Repeat Yourself).
+>   - **Don't Complicate**: KISS (Keep It Simple, Stupid).
+>   - **Don't Generate Excess Code**: YAGNI (You Aren't Gonna Need It).
+>   - **Comments**: Comment only when necessary, and when essential information cannot be conveyed through naming.
 
 > [!TIP]
 > - SOLID:
