@@ -16,7 +16,7 @@
   
 
 ## Repository Description
-The project implements finding the shortest path between two points with coordinates x and y.
+The project implements finding the shortest path between two points with coordinates _x_ and _y_.
 
 ## Environment Description
 - Java version 17.0.13 2024-10-15 LTS
@@ -25,26 +25,27 @@ The project implements finding the shortest path between two points with coordin
 - Apache Maven 3.8.6
 
 ## Principles of Repository Organization
-In project we use different conventional types of branches and commits to facilitate code management and maintain project clarity.
+In project, we use different conventional types of branches and commits to facilitate code management and maintain project clarity.
 
 **Conventional Commits** (https://www.conventionalcommits.org/en/v1.0.0/)
 
 **Conventional Branches** (https://conventional-branch.github.io/)
 
 ### Pull Request Rules
-- <ins>Description:</ins> each pull request must contain a description of the changes made
-- <ins>Merge Strategy:</ins> we prefer squash
-- <ins>No branch multiplication:</ins> after merging a pull request, the branch should be removed
-- <ins>For Avoding Conflict:</ins>
-  - kinde pease minimize the lifespan of the branch
-  - kinde pease work only on own files
-  - use always code review
+> [!IMPORTANT]
+> - <ins>Description:</ins> each pull request must contain a description of the changes made
+> - <ins>Merge Strategy:</ins> we prefer squash
+> - <ins>No branch multiplication:</ins> after merging a pull request, the branch should be removed
+> - <ins>For Avoiding Conflicts:</ins>
+>   - kindly please minimize the lifespan of the branch
+>   - kindly please work only on own files
+>   - always find time on code review before merge
 
 ### Branch Description
-The main development branch is name `main`.
+The main development branch is named `main`.
 
 > [!NOTE]
-> The min branch is **protected** by the following rules:
+> The main branch is **protected** by the following rules:
 >  - restrict deletions
 >  - require a pull request before merging
 >  - block force pushes
@@ -84,13 +85,13 @@ The main development branch is name `main`.
 
 **Step 2:** Install Commitizen (https://pypi.org/project/commitizen/)
 
-**Step 3:** Stages a change in yours files: `git add`
+**Step 3:** Stage changes in your files: `git add`
 
 **Step 4:** Instead of `git commit` command use `cz commit`
 
 **Step 5:** Answer the questions displayed in the terminal. The program will help you commit changes according to the conventional commit template.
 
-#### Prefixes fro Commits
+#### Prefixes for Commits
 - **feat/:** Commits used for developing new features.
 - **fix/:** Commits used for fixing bugs.
 - **refactor/:** Commits used for code refactoring.
@@ -116,10 +117,15 @@ prefix(scope): <description>
 
 <footer(s)>
 ```
+
+> [!IMPORTANT]
+> The **commitizen** tool uses the `|` character to start a new line in the `<body>` section.
+
 ```
 docs(README.md): rules of collaboration
 
-Add README.md - the file contains basic information about the repository and describes the rules of its operation.
+Add README.md.
+The file contains basic information about the repository and describes its operational rules.
 
 issue: #1
 ```
@@ -142,20 +148,20 @@ issue: #1
 >   - **Readability**: Code should be easy to read. 
 >   - **Clarity**: Avoid ambiguous abbreviations and names.
 >   - **Modularity**: Each module should be small and have a single responsibility.
->   - **Avoid Duplication**: DRY (Don't Repeat Yourself).
->   - **Don't Complicate**: KISS (Keep It Simple, Stupid).
->   - **Don't Generate Excess Code**: YAGNI (You Aren't Gonna Need It).
+>   - **Avoid Duplication**: DRY (_Don't Repeat Yourself_).
+>   - **Don't Complicate**: KISS (_Keep It Simple, Stupid_).
+>   - **Don't Generate Excess Code**: YAGNI (_You Aren't Gonna Need It_).
 >   - **Comments**: Comment only when necessary, and when essential information cannot be conveyed through naming.
 
 > [!TIP]
 > - SOLID:
->   - **S** => Single Responsibility Principle
->   - **O** => Open/Closed Principle
->   - **L** => Liskov Substitution Principle
->   - **I** => Interface Segregation Principle
->   - **D** => Dependency Inversion Principle
+>   - **S** => _Single Responsibility Principle_
+>   - **O** => _Open/Closed Principle_
+>   - **L** => _Liskov Substitution Principle_
+>   - **I** => _Interface Segregation Principle_
+>   - **D** => _Dependency Inversion Principle_
 
 > [!TIP]
 > - TESTING:
->   - **TDD** (Red-Green-Refactor)
->   - **Given-When-Then**
+>   - **TDD** (_Red-Green-Refactor_)
+>   - **_Given-When-Then_**
